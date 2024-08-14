@@ -5,7 +5,6 @@ const cyclicRotation = (arr)=>{
         arr[i] = arr[i-1]
     }
     arr[0] = temp
-    console.log(3%6)
     return arr;
 }
 module.exports = {cyclicRotation}

@@ -1,9 +1,11 @@
 const { favoriteSinger } = require("./basic/favoriteSinger.js");
 const { hackerRankGridQuestion } = require("./basic/hackerRankGridQuestion.js");
 const { pickNeighbor } = require("./basic/pickNeighbor.js");
-const {largestString} = require("./basic/largestString.js")
+const { largestString } = require("./basic/largestString.js");
 const { cyclicRotation } = require("./array/cyclicRotation.js");
 const { missingNumber } = require("./array/missingNumber.js");
+const { arrayMethods } = require("./array/arrayMethods.js");
+const { gamingArray } = require("./array/gamingArray.js");
 function main() {
   // // --- Favorite Singer ---
   // console.log('--- Favorite Singer ---');
@@ -22,7 +24,7 @@ function main() {
 
   // // --- Cyclic Rotation ---
   // console.log('--- Cyclic Rotation ---');
-  // const cyclicRotationArray = [1, 2, 3, 4, 5];
+  // const cyclicRotationArray = [1, 2, 3, 4, 5,6,7];
   // const rotationCount = 2; // Add the rotation count for the cyclic rotation
   // console.log(cyclicRotation(cyclicRotationArray, rotationCount));
 
@@ -32,9 +34,19 @@ function main() {
   // console.log(missingNumber(missingNumberArray));
 
   // --- Largest String ---
-  console.log("--- Largest String ---");
-  const inputStr = "The quick brown fox jumped over the lazy dog";
-  console.log(largestString(inputStr));
+  // console.log("--- Largest String ---");
+  // const inputStr = "The quick brown fox jumped over the lazy dog";
+  // console.log(largestString(inputStr));
+
+  // // --- Array Methods ---
+  // console.log('--- Array Methods ---');
+  // const size = 5;
+  // console.log(arrayMethods(size));
+
+  // --- Gaming Array ---
+  console.log('--- Gaming Array ---');
+  const arr = [5,2,6,3,4];
+  console.log(gamingArray(arr));
 }
 
 main();
