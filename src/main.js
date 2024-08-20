@@ -38,15 +38,15 @@ function main() {
   // const inputStr = "The quick brown fox jumped over the lazy dog";
   // console.log(largestString(inputStr));
 
-  // // --- Array Methods ---
-  // console.log('--- Array Methods ---');
-  // const size = 5;
-  // console.log(arrayMethods(size));
+  // // --- Gaming Array ---
+  // console.log('--- Gaming Array ---');
+  // const arr = [5,2,6,3,4];
+  // console.log(gamingArray(arr));
 
-  // --- Gaming Array ---
-  console.log('--- Gaming Array ---');
-  const arr = [5,2,6,3,4];
-  console.log(gamingArray(arr));
+  // --- Array Methods ---
+  console.log('--- Array Methods ---');
+  const size = 5;
+  console.log(arrayMethods(size));
 }
 
 main();
