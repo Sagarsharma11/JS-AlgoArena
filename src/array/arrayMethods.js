@@ -1,9 +1,15 @@
 "use strict";
 
-const deleteFromEnd = (array, len) => {
-  const index = emptyIndex(array);
+const deleteFromEnd = (array, size) => {
+  const index = emptyIndex(array, size);
+
+  if(index === 0) {
+    console.log("Cannot pop the value from array, Array is empty");
+    return;
+  }
+
   if (index === -1) {
-    array[len - 1] = null;
+    array[size - 1] = null;
   } else {
     array[index - 1] = null;
   }
@@ -17,15 +23,15 @@ const searchElement = (array, size, ele) => {
   return false;
 };
 
-const emptyIndex = (array, len) => {
-  for (let i = 0; i < len; i++) {
+const emptyIndex = (array, size) => {
+  for (let i = 0; i < size; i++) {
     if (array[i] === undefined || array[i] === null) return i;
   }
   return -1;
 };
 
-const insertIntoArray = (array, len, val) => {
-  const index = emptyIndex(array, len);
+const insertIntoArray = (array, size, val) => {
+  const index = emptyIndex(array, size);
   if (index < 0) {
     console.log("Array is full");
     return;

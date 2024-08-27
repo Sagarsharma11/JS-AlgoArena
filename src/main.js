@@ -4,8 +4,10 @@ const { pickNeighbor } = require("./basic/pickNeighbor.js");
 const { largestString } = require("./basic/largestString.js");
 const { cyclicRotation } = require("./array/cyclicRotation.js");
 const { missingNumber } = require("./array/missingNumber.js");
-const { arrayMethods } = require("./array/arrayMethods.js");
 const { gamingArray } = require("./array/gamingArray.js");
+const { arrayMethods } = require("./array/arrayMethods.js");
+const { linearSearch } = require("./searching/linearSearch.js");
+const { binarySearch } = require("./searching/binarySearch.js");
 function main() {
   // // --- Favorite Singer ---
   // console.log('--- Favorite Singer ---');
@@ -44,9 +46,22 @@ function main() {
   // console.log(gamingArray(arr));
 
   // --- Array Methods ---
-  console.log('--- Array Methods ---');
-  const size = 5;
-  console.log(arrayMethods(size));
+  // console.log('--- Array Methods ---');
+  // const size = 5;
+  // console.log(arrayMethods(size));
+
+  // --- Linear Search ---
+  // console.log('--- Array Methods ---');
+  // const arr = [2,3,4,99,9,1];
+  // const size = 6;
+  // const targetElement = 99;
+  // console.log(linearSearch(arr, size, targetElement));
+
+  console.log("--- Binary search ---");
+  const arr = [7, 14, 21, 25, 82, 91];
+  const size = 6;
+  const targetElement = 91;
+  console.log(binarySearch(arr, size, targetElement));
 }
 
 main();
