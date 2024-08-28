@@ -8,6 +8,7 @@ const { gamingArray } = require("./array/gamingArray.js");
 const { arrayMethods } = require("./array/arrayMethods.js");
 const { linearSearch } = require("./searching/linearSearch.js");
 const { binarySearch } = require("./searching/binarySearch.js");
+const {kth_missingAlgorithm} = require("./searching/kth_missingAlgorithm.js")
 function main() {
   // // --- Favorite Singer ---
   // console.log('--- Favorite Singer ---');
@@ -57,11 +58,20 @@ function main() {
   // const targetElement = 99;
   // console.log(linearSearch(arr, size, targetElement));
 
-  console.log("--- Binary search ---");
-  const arr = [7, 14, 21, 25, 82, 91];
-  const size = 6;
-  const targetElement = 91;
-  console.log(binarySearch(arr, size, targetElement));
+  // --- Binary Search ---
+  // console.log("--- Binary search ---");
+  // const arr = [7, 14, 21, 25, 82, 91];
+  // const size = 6;
+  // const targetElement = 91;
+  // console.log(binarySearch(arr, size, targetElement));
+
+  // --- kth Missing Algorithms ---
+  console.log("--- Kth Missing Algorithms ---");
+  // const arr = [2, 3, 4, 7, 11];
+  const arr = [100, 200, 300]
+  const size = 3;
+  const k = 5;
+  console.log(kth_missingAlgorithm(arr, size, k))
 }
 
 main();
