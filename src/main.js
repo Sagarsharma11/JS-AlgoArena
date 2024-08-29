@@ -1,3 +1,4 @@
+"use strict"
 const { favoriteSinger } = require("./basic/favoriteSinger.js");
 const { hackerRankGridQuestion } = require("./basic/hackerRankGridQuestion.js");
 const { pickNeighbor } = require("./basic/pickNeighbor.js");
@@ -9,6 +10,7 @@ const { arrayMethods } = require("./array/arrayMethods.js");
 const { linearSearch } = require("./searching/linearSearch.js");
 const { binarySearch } = require("./searching/binarySearch.js");
 const {kth_missingAlgorithm} = require("./searching/kth_missingAlgorithm.js")
+const {fibonacciSeries} = require("./dsa/fibonacciSeries.js")
 function main() {
   // // --- Favorite Singer ---
   // console.log('--- Favorite Singer ---');
@@ -66,12 +68,16 @@ function main() {
   // console.log(binarySearch(arr, size, targetElement));
 
   // --- kth Missing Algorithms ---
-  console.log("--- Kth Missing Algorithms ---");
+  // console.log("--- Kth Missing Algorithms ---");
   // const arr = [2, 3, 4, 7, 11];
-  const arr = [100, 200, 300]
-  const size = 3;
-  const k = 5;
-  console.log(kth_missingAlgorithm(arr, size, k))
+  // const size = 3;
+  // const k = 5;
+  // console.log(kth_missingAlgorithm(arr, size, k))
+
+  // --- Fibonacci Series ---
+  console.log("--- Fibonacci Series ---");
+  const term = 5;
+  console.log(fibonacciSeries(term))
 }
 
 main();

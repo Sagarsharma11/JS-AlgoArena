@@ -11,4 +11,26 @@ const kth_missingAlgorithm = (arr, size, k) =>{
     return -1
 }
 
+// GPT solution
+// const kth_missingAlgorithm = (arr, size, k) => {
+//     let missingCount = 0;
+//     let currentNumber = 1; // Start checking from 1
+//     let index = 0;
+
+//     while (missingCount < k) {
+//         if (index < size && arr[index] === currentNumber) {
+//             index++;
+//         } else {
+           
+//             missingCount++;
+//             if (missingCount === k) {
+//                 return currentNumber;
+//             }
+//         }
+//         currentNumber++;
+//     }
+
+//     return -1; 
+// }
+
 module.exports = {kth_missingAlgorithm}
