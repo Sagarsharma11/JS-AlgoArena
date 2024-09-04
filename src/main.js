@@ -9,8 +9,9 @@ const { gamingArray } = require("./array/gamingArray.js");
 const { arrayMethods } = require("./array/arrayMethods.js");
 const { linearSearch } = require("./searching/linearSearch.js");
 const { binarySearch } = require("./searching/binarySearch.js");
-const {kth_missingAlgorithm} = require("./searching/kth_missingAlgorithm.js")
-const {fibonacciSeries} = require("./dsa/fibonacciSeries.js")
+const {kth_missingAlgorithm} = require("./searching/kth_missingAlgorithm.js");
+const {fibonacciSeries} = require("./dsa/fibonacciSeries.js");
+const {uniqueRandomArray} = require("./array/uniqueRandomArray.js")
 function main() {
   // // --- Favorite Singer ---
   // console.log('--- Favorite Singer ---');
@@ -75,9 +76,16 @@ function main() {
   // console.log(kth_missingAlgorithm(arr, size, k))
 
   // --- Fibonacci Series ---
-  console.log("--- Fibonacci Series ---");
-  const term = 5;
-  console.log(fibonacciSeries(term))
+  // console.log("--- Fibonacci Series ---");
+  // const term = 5;
+  // console.log(fibonacciSeries(term))
+
+  // --- Unique Random Array ---
+  console.log("--- Unique Random Array ---");
+  const jsonArray = require("./data/data.json");
+  const arr = jsonArray.map(({title})=>title)
+  const size = 100;
+  console.log(uniqueRandomArray(arr, size))
 }
 
 main();
