@@ -3,6 +3,7 @@ const { hackerRankGridQuestion } = require("./basic/hackerRankGridQuestion.js")
 const { pickNeighbor } = require("./basic/pickNeighbor.js")
 const { cyclicRotation } = require("./array/cyclicRotation.js")
 const { missingNumber } = require("./array/missingNumber.js")
+const {TwoDMatrix} = require("./array/TwoDMatrix.js")
 function main() {
     // // --- Favorite Singer ---
     // console.log('--- Favorite Singer ---');
@@ -30,6 +31,10 @@ function main() {
     // const missingNumberArray = [1, 6, 3, 4, 2];
     // console.log(missingNumber(missingNumberArray));
 
+
+    // // --- Two D Matrix ---
+    // console.log('--- Two D Matrix ---');
+    console.log(TwoDMatrix());
 }
 
 main();
