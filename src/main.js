@@ -12,6 +12,12 @@ const { binarySearch } = require("./searching/binarySearch.js");
 const {kth_missingAlgorithm} = require("./searching/kth_missingAlgorithm.js");
 const {fibonacciSeries} = require("./dsa/fibonacciSeries.js");
 const {uniqueRandomArray} = require("./array/uniqueRandomArray.js")
+const { favoriteSinger } = require("./basic/favoriteSinger.js")
+const { hackerRankGridQuestion } = require("./basic/hackerRankGridQuestion.js")
+const { pickNeighbor } = require("./basic/pickNeighbor.js")
+const { cyclicRotation } = require("./array/cyclicRotation.js")
+const { missingNumber } = require("./array/missingNumber.js")
+const {TwoDMatrix} = require("./array/TwoDMatrix.js")
 function main() {
   // // --- Favorite Singer ---
   // console.log('--- Favorite Singer ---');
@@ -86,6 +92,10 @@ function main() {
   const arr = jsonArray.map(({title})=>title)
   const size = 100;
   console.log(uniqueRandomArray(arr, size))
+
+    // // --- Two D Matrix ---
+    // console.log('--- Two D Matrix ---');
+    console.log(TwoDMatrix());
 }
 
 main();
