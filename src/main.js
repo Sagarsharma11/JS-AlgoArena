@@ -9,15 +9,14 @@ const { gamingArray } = require("./array/gamingArray.js");
 const { arrayMethods } = require("./array/arrayMethods.js");
 const { linearSearch } = require("./searching/linearSearch.js");
 const { binarySearch } = require("./searching/binarySearch.js");
-const {kth_missingAlgorithm} = require("./searching/kth_missingAlgorithm.js");
-const {fibonacciSeries} = require("./dsa/fibonacciSeries.js");
-const {uniqueRandomArray} = require("./array/uniqueRandomArray.js")
-const { favoriteSinger } = require("./basic/favoriteSinger.js")
-const { hackerRankGridQuestion } = require("./basic/hackerRankGridQuestion.js")
-const { pickNeighbor } = require("./basic/pickNeighbor.js")
-const { cyclicRotation } = require("./array/cyclicRotation.js")
-const { missingNumber } = require("./array/missingNumber.js")
-const {TwoDMatrix} = require("./array/TwoDMatrix.js")
+const { kth_missingAlgorithm } = require("./searching/kth_missingAlgorithm.js");
+const { fibonacciSeries } = require("./dsa/fibonacciSeries.js");
+const { uniqueRandomArray } = require("./array/uniqueRandomArray.js");
+const { TwoDMatrix } = require("./array/TwoDMatrix.js");
+const { Stack } = require("./dsa/stack/stack-implementation.js");
+const { validParentheses } = require("./dsa/stack/validParentheses.js");
+const { Queue } = require("./dsa/queue/queue-implementation.js")
+
 function main() {
   // // --- Favorite Singer ---
   // console.log('--- Favorite Singer ---');
@@ -87,15 +86,39 @@ function main() {
   // console.log(fibonacciSeries(term))
 
   // --- Unique Random Array ---
-  console.log("--- Unique Random Array ---");
-  const jsonArray = require("./data/data.json");
-  const arr = jsonArray.map(({title})=>title)
-  const size = 100;
-  console.log(uniqueRandomArray(arr, size))
+  // console.log("--- Unique Random Array ---");
+  // const jsonArray = require("./data/data.json");
+  // const arr = jsonArray.map(({ title }) => title)
+  // const size = 100;
+  // console.log(uniqueRandomArray(arr, size))
 
-    // // --- Two D Matrix ---
-    // console.log('--- Two D Matrix ---');
-    console.log(TwoDMatrix());
+  // // --- Two D Matrix ---
+  // console.log('--- Two D Matrix ---');
+  // console.log(TwoDMatrix());
+
+  // --- Stack Implementation ---
+  // console.log("--- Stack Implementation ---");
+  // const stack = new Stack();
+  // stack.push(10);
+  // stack.push(12);
+  // stack.push(13);
+  // stack.push(14);
+  // console.log(stack.peek())
+
+  // // --- validParentheses ---
+  // console.log('--- validParentheses ---');
+  // console.log(validParentheses())
+
+  // // --- Queue Implementation ---
+  console.log("--- Queue Implementation ---")
+  const queue = new Queue();
+  queue.enqueue(10);
+  queue.enqueue(20);
+  queue.enqueue(30);
+  console.log(queue.front());
+  console.log(queue.dequeue());
+  queue.printQueue();
+  console.log(queue.size());
 }
 
 main();
